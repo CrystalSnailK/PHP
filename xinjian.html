@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/luntan.css" type="text/css">
+    <title>新建帖子</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+        }
+        .container {
+            height: 100%;
+            /* background-image: linear-gradient(to right, #fbc2eb, #a6c1ee); */
+        }
+        </style>
+</head>
+<body>
+    <div class="xinjian_box">
+        <form action="xinjian.php" method="post" name="xinjian_tab"  >
+        <h3 class="login_font1">新建帖子</h3>
+        <div><label class="login_font_user" >标题</label></div>
+        <input class="xinjian_title_box" style=word-break:break-all type="text" name="title" placeholder="请输入标题">
+        <div><label class="login_font_pwd">内容</label></div>
+        <input class="xinjian_neirong_box" style=word-break:break-all type="text" name="neirong" placeholder="请输入内容">
+        <div> <a href="luntan.php" ><input class='fasong_submit' type='button' value='返回登录'  style="width: 100px;margin-top: 2%;margin-left:4%;"></a></div>
+        <div><input class="xinjian_submit" type="submit"style="margin-top: 2%;width: 100px;" value="发帖"></div>   
+        </form>
+    </div>
+</body>
+</html>
